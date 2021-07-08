@@ -21,6 +21,8 @@
 		FD539A97269630C500B7EF05 /* AnimationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD539A96269630C500B7EF05 /* AnimationListVC.swift */; };
 		FD539A9E2696329700B7EF05 /* LottieBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD539A9D2696329700B7EF05 /* LottieBasicVC.swift */; };
 		FD539AA4269634E100B7EF05 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD539AA3269634E100B7EF05 /* UIViewExtensions.swift */; };
+		FDF8C9A926978C79000E48A9 /* LottieShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8C9A826978C79000E48A9 /* LottieShowVC.swift */; };
+		FDF8C9B526979260000E48A9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8C9B426979260000E48A9 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FD539A96269630C500B7EF05 /* AnimationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListVC.swift; sourceTree = "<group>"; };
 		FD539A9D2696329700B7EF05 /* LottieBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBasicVC.swift; sourceTree = "<group>"; };
 		FD539AA3269634E100B7EF05 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		FDF8C9A826978C79000E48A9 /* LottieShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieShowVC.swift; sourceTree = "<group>"; };
+		FDF8C9B426979260000E48A9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		FD539A442696261B00B7EF05 /* LottieSample */ = {
 			isa = PBXGroup;
 			children = (
+				FDF8C9A726978C67000E48A9 /* LottieShowVC */,
 				FD539AA2269634CF00B7EF05 /* Extensions */,
 				FD539A9B2696327700B7EF05 /* ViewControllers */,
 				FD539A95269630A700B7EF05 /* Animations */,
@@ -204,9 +209,18 @@
 		FD539AA2269634CF00B7EF05 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FDF8C9B426979260000E48A9 /* UIViewController+Extensions.swift */,
 				FD539AA3269634E100B7EF05 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDF8C9A726978C67000E48A9 /* LottieShowVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8C9A826978C79000E48A9 /* LottieShowVC.swift */,
+			);
+			path = LottieShowVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,7 +465,9 @@
 				FD539A97269630C500B7EF05 /* AnimationListVC.swift in Sources */,
 				FD539AA4269634E100B7EF05 /* UIViewExtensions.swift in Sources */,
 				FD539A462696261B00B7EF05 /* AppDelegate.swift in Sources */,
+				FDF8C9B526979260000E48A9 /* UIViewController+Extensions.swift in Sources */,
 				FD539A9E2696329700B7EF05 /* LottieBasicVC.swift in Sources */,
+				FDF8C9A926978C79000E48A9 /* LottieShowVC.swift in Sources */,
 				FD539A482696261B00B7EF05 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

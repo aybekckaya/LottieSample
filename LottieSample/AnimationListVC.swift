@@ -85,10 +85,7 @@ extension AnimationListVC {
 // MARK: - Set Up UI
 extension AnimationListVC {
     private func setUpUI() {
-    
-        let config = UIImage.SymbolConfiguration(pointSize: 24)
-        let backImage = UIImage(systemName: "chevron.left", withConfiguration: config)!
-       
+
         self.navigationController?.navigationBar.titleFont(font: .avenirNextBold(with: 24), color: .black).preferLargeTitles(false)
         self.title = "Lottie List"
         self.view.backgroundColor = UIColor.white

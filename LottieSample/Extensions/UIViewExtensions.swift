@@ -96,6 +96,12 @@ extension UIView {
 // MARK: - View Factory
 struct ViewFactory {
    
+    static func pageControl() -> UIPageControl {
+        let control = UIPageControl(frame: .zero)
+        control.translatesAutoresizingMaskIntoConstraints = false
+        return control
+    }
+    
     static func stackView(alignment: UIStackView.Alignment, distribution: UIStackView.Distribution, spacing: CGFloat, axis: NSLayoutConstraint.Axis) -> UIStackView {
         let stack = UIStackView(frame: .zero)
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -182,6 +188,10 @@ extension UIView {
     func asTableView() -> UITableView {
         return self as! UITableView
     }
+    
+    func asPageControl() -> UIPageControl {
+        return self as! UIPageControl
+    }
 }
 
 // MARK: - CALayer
@@ -233,6 +243,42 @@ extension UILabel {
     }
 }
 
+// MARK: UIPageControl
+extension UIPageControl {
+    @discardableResult
+    func numberOfPages(_ number: Int) -> UIPageControl {
+        self.numberOfPages = number
+        return self
+    }
+    
+    @discardableResult
+    func pageSelectedColor(_ color: UIColor) -> UIPageControl {
+        self.currentPageIndicatorTintColor = color
+        return self
+    }
+    
+    @discardableResult
+    func pageColor(_ color: UIColor) -> UIPageControl {
+        self.pageIndicatorTintColor = color
+        return self
+    }
+}
+
+// MARK: - UIScrollView
+extension UIScrollView {
+    @discardableResult
+    func showsHorizontalIndicators(_ show: Bool) -> UIScrollView {
+        self.showsHorizontalScrollIndicator = show
+        return self
+    }
+    
+    @discardableResult
+    func showsVerticalIndicators(_ show: Bool) -> UIScrollView {
+        self.showsVerticalScrollIndicator = show
+        return self
+    }
+    
+}
 
 // MARK: - UITableView
 extension UITableView {
