@@ -1,0 +1,6 @@
+framework module Pods_LottieSampleTests {
+  umbrella header "Pods-LottieSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
